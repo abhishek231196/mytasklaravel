@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "3a9207ac-615a-4cf5-bb18-b8640223e8bf",
+		"name": "Mytask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27576275"
+	},
+	"item": [
+		{
+			"name": "get-tansaction",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/get-tansaction"
+			},
+			"response": []
+		},
+		{
+			"name": "savetansaction",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "project_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "from_account_no",
+							"value": "8944445488",
+							"type": "text"
+						},
+						{
+							"key": "to_account_no",
+							"value": "111111111111",
+							"type": "text"
+						},
+						{
+							"key": "transaction_amount",
+							"value": "40000",
+							"type": "text"
+						},
+						{
+							"key": "transaction_date",
+							"value": "2023-05-24",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/savetansaction"
+			},
+			"response": []
+		},
+		{
+			"name": "approvedreject-transaction",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "status",
+							"value": "A",
+							"type": "text"
+						},
+						{
+							"key": "_method",
+							"value": "put",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/approvedreject-transaction/10"
+			},
+			"response": []
+		},
+		{
+			"name": "analytics",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "status",
+							"value": "A",
+							"type": "text"
+						},
+						{
+							"key": "_method",
+							"value": "put",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/get-analytics/1"
+			},
+			"response": []
+		}
+	]
+}
